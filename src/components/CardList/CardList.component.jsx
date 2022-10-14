@@ -13,7 +13,7 @@ class CardList extends Component {
 				{
 					monsters.map((monster) => {
 						return (
-							<Card monsterID={ monster.id } monsterName={ monster.name } monsterEmail={ monster.email } />
+							<Card monster={ monster } />
 						)
 					})
 				}

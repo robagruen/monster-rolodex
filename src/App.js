@@ -34,6 +34,8 @@ class App extends Component {
     this.setState(() => {
       return { searchQuery: inputValue }
     });
+
+
   }
 
   render() {
