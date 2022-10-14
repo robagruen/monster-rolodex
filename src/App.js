@@ -1,4 +1,4 @@
-import { Component, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import CardList from './components/CardList/CardList.component'
 import SearchBox from './components/SearchBox/SearchBox.component';
@@ -9,8 +9,6 @@ const App = () => {
   const [searchField, setSearchField] = useState(''); // [value, setValue]
   const [monsters, setMonsters] = useState([]);
   const [filteredMonsters, setFilteredMonsters] = useState(monsters);
-
-  console.log('render')
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
